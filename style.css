@@ -242,6 +242,18 @@ a{
     font-size: 30px; 
     
   }
+  #icones1{
+    padding-top: 50px; 
+    width: 50px;
+  }
+  .contatoInicio{
+    
+    position: absolute;
+    
+  }
+  .navBar{
+    display: none;
+  }
   .navLink{
     font-size: 21px;
     
@@ -358,9 +370,3 @@ a{
     padding-bottom: 10px;
   }
 } 
-
-@media(max-width:319px){
-  .navBar{
-    display: none;
-  }
-}
