@@ -1,0 +1,366 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#1E1E1E;
+  color: white;
+}
+.nav{
+  position: fixed;
+  width: 100%;
+  padding: 30px;
+  background-color: #282C33;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /*quebra quando esta diminuindo a tela*/
+}
+.navBar{
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding-right: 50px;
+  flex-wrap: wrap;
+}
+.navName{
+  padding-left: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.navLink{
+  color: white;
+  font-size: 20px;
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.section{
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*quebra quando esta diminuindo a tela*/
+}
+.nameDev{
+  font-size: 30px;
+  color: white;
+  padding-bottom: 15px;
+}
+.contatoInicio{
+  display: grid;
+  position: fixed;
+  padding-top: 200px;
+  padding-left: 20px;
+}
+
+
+.inicioPortfolio{
+  padding-top: 150px;
+  
+}
+
+.icones{
+  width: 51px;
+  padding-top: 15px;
+  padding-left: 13px;
+}
+
+.imgMacaco{
+  padding-top: 100px;
+  width: 250px;
+}
+.projetos{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap; /*quebra quando esta diminuindo a tela*/
+}
+.projeto1{
+  border:2px solid;
+  border-color: white;
+  width: 400px;
+  height: 450px;
+  
+  font-size: 30px;
+  background-color: #282C33;
+}
+.projeto2{
+  border:2px solid;
+  border-color: white;
+  width: 400px;
+  height: 450px;
+  font-size: 30px;
+  background-color: #282C33;
+}
+.titleProj{
+  font-size: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  text-align: start;
+}
+.paragrafoProj{
+  font-size: 20px;
+  text-align: start;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+.li{
+  font-size: 20px;
+  text-align: start;
+  padding-left: 40px;
+}
+.buttonProjeto{
+  text-align: start;
+  padding-left: 20px;
+  
+}
+#buttonVerde{
+  padding: 7px;
+  color: #36cc28;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+}
+#buttonVerde:hover{
+  border-color: #36cc28;
+}
+#buttonAzul{
+  padding: 7px;
+  font-size: 14px;
+  color: rgb(14, 110, 236);
+  background-color: transparent;
+  cursor: pointer;
+}
+#buttonAzul:hover{
+  border-color:rgb(14, 110, 236); 
+}
+.clicouNoProjeto{
+  font-size: 24px;
+}
+#projets{
+  height: 197px;
+  width: 394px;
+}
+.tituloEmH1{
+  text-align: center;
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 15px;
+
+}
+.sobreMim{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.paragrafoSobreMim{
+  font-size: 20px;
+}
+.quemSouEu{
+  padding-bottom: 15px;
+}
+.minhaFoto{
+  width: 250px; 
+  border-radius: 50px;
+}
+.imgHab{
+  width: 122px;
+  padding: 30px;
+}
+.imgTec{
+  width: 220px;
+}
+.imgTec2{
+  width: 180px;
+}
+.habilidades{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.habilidadeTitulo{
+  text-align: center;
+}
+.habOpcoes{
+  padding-bottom: 20px;
+}
+  
+.textoMotivacao{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.rashteg{
+  color: #36cc28;
+} 
+.footer{
+  background-color: #282C33;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.emailFooter{
+  padding-top: 15px;
+  font-size: 18px;
+}
+.nameCriador{
+  padding-top: 35px;
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+.iconesContatoFooter{
+  display: flex;
+}
+.txtContatoFooter{
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+
+  @media(max-width:768px) {
+    .navName{
+      padding-bottom: 15px; 
+    }
+    .navLink{
+      display: flex; 
+    }
+  }
+
+@media(max-width:425px) {
+  .navName{
+    font-size: 30px; 
+    
+  }
+  .navLink{
+    font-size: 21px;
+    
+  }
+  .icones{
+    width: 40px;
+  }
+  .nameDev{
+    font-size: 26px;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .section{
+    font-size: 16px;
+  }
+  .paragrafoSobreMim{
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sobreMim{
+    text-align: center;
+  }
+  .emailFooter{
+    font-size: 20px;
+  }
+  .txtContatoFooter{
+    font-size: 16px;
+  }
+}
+@media(max-width:320px){
+  .navName{
+    font-size: 30px; 
+    
+  }
+  .navLink{
+    font-size: 19px;
+    padding-left: 5px;
+  }
+  .contatoInicio{
+    display: flex;
+    position: absolute;
+    padding-left: 60px;
+  }
+  #icones1{
+    padding-top: 100px; 
+  }
+
+  .section{
+    font-size: 15px;
+  }
+  .nameDev{
+    font-size: 31px;
+  }
+  .imgMacaco{
+    width: 190px;
+  }
+  .tituloEmH1{
+    font-size: 30px;
+  }
+  .titleProj{
+    display: none;
+  }
+  .paragrafoProj{
+    display: none;
+  }
+  .li{
+    display: none;
+  }
+  .projeto1{
+    border:2px solid;
+    border-color: white;
+    width: 227px;
+    height: 210px; 
+    font-size: 22px;
+    background-color: #282C33;
+  }
+  #projets{
+    width: 222px;
+    height: 156px;
+  }
+  .projeto2{
+    border:2px solid;
+    border-color: white;
+    width: 227px;
+    height: 210px;;
+    font-size: 22px;
+    background-color: #282C33;
+  }
+  .tituloEmH1{
+    font-size: 30px;
+  }
+  .sobreMim{
+    font-size: 14px;
+  }
+  .paragrafoSobreMim{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .minhaFoto{
+    width: 210px;
+    padding-top: 20px;
+  }
+  .imgTec{
+    width: 160px;
+    padding-bottom: 20px;
+  }
+  .imgTec2{
+    width: 130px;
+    padding-bottom: 10px;
+  }
+  .iconesContatoFooter{
+    padding-bottom: 10px;
+  }
+} 
+
+@media(max-width:319px){
+  .navBar{
+    display: none;
+  }
+}
